@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Navbar from "./Navbar"
-export default props => (
+
+const Layout = props => (
   <div>
     <Head>
       <title>{props.title}</title>
@@ -9,3 +10,5 @@ export default props => (
     <div className="container-fluid">{props.children}</div>
   </div>
 )
+
+export default Layout

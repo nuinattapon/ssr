@@ -1,12 +1,12 @@
 // This is the Link API
 import Link from "next/link"
 
-export default () => {
+const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand navbar-dark bg-danger mb-4">
+    <nav className="navbar navbar-expand navbar-dark bg-primary mb-4">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          BitzPrice
+          Next JS
         </a>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">
@@ -16,13 +16,18 @@ export default () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/about">
-                <a className="nav-link">About</a>
+              <Link prefetch href="/login">
+                <a className="nav-link">Log in</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/input_form">
-                <a className="nav-link">Input Form</a>
+              <Link prefetch href="/logout">
+                <a className="nav-link">Log out</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link prefetch href="/about">
+                <a className="nav-link">About</a>
               </Link>
             </li>
           </ul>
@@ -31,3 +36,5 @@ export default () => {
     </nav>
   )
 }
+
+export default Navbar
