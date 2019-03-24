@@ -1,5 +1,6 @@
 // This is the Link API
 import Link from "next/link"
+import PropTypes from "prop-types"
 
 const Navbar = props => {
   return (
@@ -38,7 +39,7 @@ const Navbar = props => {
               <Link prefetch href="/about" prefetch>
                 <a className="nav-link">
                   <i className="fas fa-info-circle mr-1" />
-                  Info
+                  About
                 </a>
               </Link>
             </li>
@@ -50,3 +51,7 @@ const Navbar = props => {
 }
 
 export default Navbar
+
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired
+}
