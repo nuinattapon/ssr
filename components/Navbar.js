@@ -1,12 +1,12 @@
 // This is the Link API
 import Link from "next/link"
 
-const Navbar = () => {
+const Navbar = props => {
   return (
     <nav className="navbar navbar-expand navbar-dark bg-primary mb-4">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Next JS
+          {props.title}
         </a>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">

@@ -6,7 +6,7 @@ const Layout = props => (
     <Head>
       <title>{props.title}</title>
     </Head>
-    <Navbar />
+    <Navbar title={props.title} />
     <div className="container-fluid">{props.children}</div>
   </div>
 )

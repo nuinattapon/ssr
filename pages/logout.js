@@ -5,14 +5,14 @@ import Layout from "../components/Layout"
 import Welcome from "../components/Welcome"
 //import "./index.css"
 
-class Index extends Component {
+class Logout extends Component {
   render() {
     const title = "NextJS"
     return (
       <Layout title={title}>
-        <Welcome title={title} />
+        <Welcome title="Logout Page" />
       </Layout>
     )
   }
 }
-export default Index
+export default Logout
