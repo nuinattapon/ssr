@@ -11,23 +11,35 @@ const Navbar = props => {
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link prefetch href="/">
-                <a className="nav-link">Home</a>
+              <Link prefetch href="/" prefetch>
+                <a className="nav-link">
+                  <i className="fas fa-home mr-1" />
+                  Home
+                </a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/login">
-                <a className="nav-link">Log in</a>
+              <Link prefetch href="/login" prefetch>
+                <a className="nav-link">
+                  <i className="fas fa-sign-in-alt mr-1" />
+                  Log in
+                </a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/logout">
-                <a className="nav-link">Log out</a>
+              <Link prefetch href="/logout" prefetch>
+                <a className="nav-link">
+                  <i className="fas fa-sign-out-alt mr-1" />
+                  Log out
+                </a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/about">
-                <a className="nav-link">About</a>
+              <Link prefetch href="/about" prefetch>
+                <a className="nav-link">
+                  <i className="fas fa-info-circle mr-1" />
+                  Info
+                </a>
               </Link>
             </li>
           </ul>
