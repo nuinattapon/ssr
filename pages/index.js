@@ -7,10 +7,10 @@ import Welcome from "../components/Welcome"
 
 class Index extends Component {
   render() {
-    const title = "NextJS"
+    const title = process.env.title
     return (
       <Layout title={title}>
-        <Welcome title={title} />
+        <Welcome title="Welcome Page" />
       </Layout>
     )
   }

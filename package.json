@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "now-build": "next build",
-    "start": "next start"
+    "build": "next build",
+    "clean": "rm -rf .next && mkdir .next"
   },
   "keywords": [],
   "author": "",

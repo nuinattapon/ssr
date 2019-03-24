@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Navbar = props => {
   return (
-    <nav className="navbar navbar-expand navbar-dark bg-primary mb-4">
+    <nav className="navbar navbar-expand navbar-dark bg-info mb-4">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           {props.title}
