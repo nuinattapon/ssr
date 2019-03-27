@@ -7,6 +7,13 @@ const Navbar = props => {
     <nav className="navbar navbar-expand navbar-dark bg-info mb-4">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
+          <img
+            src="/static/u20-oow-asia-new.png"
+            alt="Logo"
+            height="40"
+            width="40"
+            className="mr-3"
+          />
           {props.title}
         </a>
         <div className="collapse navbar-collapse">

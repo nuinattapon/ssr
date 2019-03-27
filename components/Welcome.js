@@ -16,12 +16,13 @@ class Welcome extends Component {
           It uses utility classes for typography and spacing to space content
           out within the larger container.
         </p>
+
         <button
           type="button"
           className="btn btn-raised btn-info"
           onClick={this.handleClick}
         >
-          Ok
+          Go to Home page
         </button>
       </div>
     )
