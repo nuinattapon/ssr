@@ -1,7 +1,7 @@
-module.exports = {
+const withCSS = require("@zeit/next-css")
+module.exports = withCSS({
   /* my next config */
-  target: "serverless",
   env: {
-    title: "NextJS 8.0"
+    title: "SSR"
   }
-}
+})

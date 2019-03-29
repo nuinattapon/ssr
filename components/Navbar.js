@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const Navbar = props => {
   return (
-    <nav className="navbar navbar-expand navbar-dark bg-info mb-4">
+    <nav className="navbar navbar-expand navbar-dark bg-info fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img
@@ -19,7 +19,7 @@ const Navbar = props => {
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link prefetch href="/" prefetch>
+              <Link prefetch href="/">
                 <a className="nav-link">
                   <i className="fas fa-home mr-1" />
                   Home
@@ -27,7 +27,7 @@ const Navbar = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/login" prefetch>
+              <Link prefetch href="/login">
                 <a className="nav-link">
                   <i className="fas fa-sign-in-alt mr-1" />
                   Log in
@@ -35,7 +35,7 @@ const Navbar = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/logout" prefetch>
+              <Link prefetch href="/logout">
                 <a className="nav-link">
                   <i className="fas fa-sign-out-alt mr-1" />
                   Log out
@@ -43,7 +43,7 @@ const Navbar = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/about" prefetch>
+              <Link prefetch href="/about">
                 <a className="nav-link">
                   <i className="fas fa-info-circle mr-1" />
                   About

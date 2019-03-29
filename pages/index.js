@@ -1,16 +1,24 @@
 import React, { Component } from "react"
-// import "bootstrap/dist/css/bootstrap.min.css"
+
+import "./index.css"
+import "./navbar-top-fixed.css"
 
 import Layout from "../components/Layout"
-import Welcome from "../components/Welcome"
-//import "./index.css"
-
+import Card from "../components/Card"
+import data from "../data/data.json"
 class Index extends Component {
+  static async getInitialProps() {
+    return { cards: data }
+  }
+
   render() {
     const title = process.env.title
+    const { cards } = this.props
+    const cardsHTML = cards.map(card => <Card key={card.id} />)
+
     return (
       <Layout title={title}>
-        <Welcome title="Welcome Page" />
+        <div className="row">{cardsHTML}</div>
       </Layout>
     )
   }
