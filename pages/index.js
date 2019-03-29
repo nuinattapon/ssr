@@ -18,7 +18,7 @@ class Index extends Component {
 
     return (
       <Layout title={title}>
-        <div className="row">{cardsHTML}</div>
+        <div className="row justify-content-center">{cardsHTML}</div>
       </Layout>
     )
   }
