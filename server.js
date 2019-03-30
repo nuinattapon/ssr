@@ -13,6 +13,10 @@ app.prepare().then(() => {
   server.use(express.urlencoded({ extended: true }))
   server.use(express.json())
 
+  server.get("/page3", (req, res) => {
+    return app.render(req, res, "/about")
+  })
+
   server.get("*", (req, res) => {
     return handle(req, res)
   })

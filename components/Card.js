@@ -1,5 +1,5 @@
 const Card = props => (
-  <div className="card col-2 m-2">
+  <div className="card col-3 m-2">
     <img src="/static/juice.jpg" alt="Avatar" className="mt-3 card-img-top" />
     <div className="card-body">
       <h3 className="card-title">
