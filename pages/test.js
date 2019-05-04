@@ -1,19 +1,19 @@
 import React, { Component } from "react"
 
 import Layout from "../components/Layout"
-import Welcome from "../components/Welcome"
+import Form from "../components/Form"
 
 // import "./index.css"
 import "./navbar-top-fixed.css"
 
-class About extends Component {
+class Test extends Component {
   render() {
     const title = process.env.title
     return (
       <Layout title={title}>
-        <Welcome title="About Page" />
+        <Form />
       </Layout>
     )
   }
 }
-export default About
+export default Test

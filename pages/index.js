@@ -1,11 +1,13 @@
 import React, { Component } from "react"
 
-import "./index.css"
-import "./navbar-top-fixed.css"
-
 import Layout from "../components/Layout"
 import Card from "../components/Card"
+import Intro from "../components/Intro"
 import data from "../data/data.json"
+
+//import "./index.css"
+import "./navbar-top-fixed.css"
+
 class Index extends Component {
   static async getInitialProps() {
     return { cards: data }
@@ -18,6 +20,8 @@ class Index extends Component {
 
     return (
       <Layout title={title}>
+        <Intro />
+
         <div className="row justify-content-center">{cardsHTML}</div>
       </Layout>
     )

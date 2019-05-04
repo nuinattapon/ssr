@@ -1,9 +1,10 @@
 import React, { Component } from "react"
-// import "bootstrap/dist/css/bootstrap.min.css"
 
 import Layout from "../components/Layout"
 import Welcome from "../components/Welcome"
-//import "./index.css"
+
+// import "./index.css"
+import "./navbar-top-fixed.css"
 
 class Login extends Component {
   render() {
