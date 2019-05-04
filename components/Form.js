@@ -31,7 +31,7 @@ const Form = () => {
               <label htmlFor="inputEmail">E-mail</label>
               <input
                 type="email"
-                className="form-control"
+                className="form-control bg-light text-white"
                 id="inputEmail"
                 name="email"
                 aria-describedby="emailHelp"
@@ -48,7 +48,7 @@ const Form = () => {
               <label htmlFor="inputPassword">Password</label>
               <input
                 type="password"
-                className="form-control"
+                className="form-control bg-light text-white"
                 id="inputPassword"
                 name="password"
                 placeholder="Password"
@@ -61,7 +61,7 @@ const Form = () => {
               <label htmlFor="inputNote">Note</label>
               <input
                 type="text"
-                className="form-control"
+                className="form-control bg-light text-white"
                 id="inputNote"
                 name="note"
                 placeholder="Note"
@@ -135,7 +135,7 @@ const Form = () => {
                 Please choose a country:
               </label>
               <select
-                className="custom-select"
+                className="custom-select bg-light text-white"
                 id="country"
                 size="4"
                 value={values.country}
