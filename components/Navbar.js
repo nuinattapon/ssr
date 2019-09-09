@@ -2,7 +2,7 @@
 import Link from "next/link"
 import PropTypes from "prop-types"
 
-const Navbar = props => {
+const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
@@ -19,7 +19,7 @@ const Navbar = props => {
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link prefetch href="/">
+              <Link href="/">
                 <a className="nav-link">
                   <i className="fas fa-home mr-1 text-success" />
                   Home
@@ -27,7 +27,7 @@ const Navbar = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/login">
+              <Link href="/login">
                 <a className="nav-link">
                   <i className="fas fa-sign-in-alt mr-1 text-primary" />
                   Log in
@@ -35,7 +35,7 @@ const Navbar = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/logout">
+              <Link href="/logout">
                 <a className="nav-link">
                   <i className="fas fa-sign-out-alt mr-1 text-warning" />
                   Log out
@@ -43,7 +43,7 @@ const Navbar = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link prefetch href="/about">
+              <Link href="/about">
                 <a className="nav-link">
                   <i className="fas fa-info-circle mr-1 text-info" />
                   About
