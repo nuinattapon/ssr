@@ -5,7 +5,11 @@ import Card from "../components/Card"
 import Intro from "../components/Intro"
 import data from "../data/data.json"
 
+<<<<<<< HEAD
 //import "./index.css"
+=======
+import "./index.css"
+>>>>>>> a7614f689ea9528561db8d23c8612082580c47df
 import "./navbar-top-fixed.css"
 
 class Index extends Component {

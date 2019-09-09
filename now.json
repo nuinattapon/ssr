@@ -1,5 +1,12 @@
 {
   "version": 2,
-  "name": "ssr2",
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
+  "name": "ssr",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" },
+    {
+      "src": "server.js",
+      "use": "@now/node-server",
+      "config": { "maxLambdaSize": "20mb" }
+    }
+  ]
 }
