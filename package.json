@@ -13,7 +13,9 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "prod": "NODE_ENV=production node server.js",
-    "clean": "rm -rf .next && mkdir .next"
+    "clean": "rm -rf .next && mkdir .next",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "webpack": "^4.40.2"
-  }
+    "webpack": "^4.40.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
